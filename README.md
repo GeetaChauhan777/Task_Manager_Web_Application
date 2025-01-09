@@ -109,8 +109,14 @@ Demo Video
 
 
 
-**Sample User Login :**
+**Sample User Logins :**
 
+1.	Employee Login:
+   
+•	Email : employee1@gmail.com
+•	Password : Password@123
+
+3.	Customer Login :
+   
 •	Email : customer1@gmail.com
-
 •	Password : Password@123
