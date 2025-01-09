@@ -74,7 +74,7 @@ Requirements
    ```
    
 Live Demo
-The application is hosted live on a server/cloud platform. [Demo Link](#)
+The application is hosted live on a server/cloud platform. [Demo Link](https://taskmanagerwebapplication.netlify.app/)
 
 Testing
 - **Unit Testing**:
