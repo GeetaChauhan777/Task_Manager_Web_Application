@@ -1,92 +1,103 @@
+# Task_Manager_Web_Application
+**Description**
 
-# Task Management System
+This is a Task Manager web application that allows users to create, view, update, and delete tasks. The application is designed with frontend, backend, database, and API components, enabling users to register, log in, and effectively manage their tasks.
+Features
+- **User Authentication**: Users can register and log in securely with password hashing and JWT-based authentication.
+- **Task Management**: Users can perform CRUD operations (Create, Read, Update, Delete) on tasks.
+- **Responsive Design**: The frontend is intuitive and mobile-friendly for different screen sizes.
+- **Backend**: Efficiently handles API requests, validation, and task management operations.
+- **Database Integration**: Stores user and task data securely in the database.
+- **Error Handling**: Meaningful error messages and robust validation for a smooth user experience.
 
-This Task Management System is a web application developed using React.js for the frontend, Node.js with Express.js for the backend, and MongoDB for the database. The project incorporates user authentication with three roles: customer, employee, and general user.
-
-
-## 🌐 Features
-
-* __User Authentication:__ 
-   * Customer, Employee, and User login functionality.
-   * Secure authentication using JSON Web Tokens (JWT).
+Project Structure
+Backend Development
+1. **Server Setup**:
+   - Built using **Node.js** and **Express.js**.
+   - JWT is used for user authentication and authorization.
+2. **API Endpoints**:
+   - User Registration: `/api/auth/register`
+   - User Login: `/api/auth/login`
+   - Task Management: `/api/tasks` (Create, Read, Update, Delete)
+3. **Validation and Error Handling**:
+   - Input validation is implemented to ensure proper API usage.
+   - Error messages are provided for meaningful feedback.
+     
+Database Setup
+1. **Database Choice**:
+   - **MongoDB** was chosen for this project.
+2. **Database Schema**:
+   - User Schema: Stores user information (e.g., username, email, password).
+   - Task Schema: Stores task information (e.g., title, description, status, due date, user ID).
+     
+Frontend Development
+1. **Framework**:
+   - Built with **React.js** for a responsive and user-friendly interface.
+2. **Components**:
+   - **Auth**: Login and Registration forms.
+   - **Task Management**: Pages for displaying, adding, editing, and deleting tasks.
+3. **Styling**:
+   - CSS is used for responsive design and an intuitive interface.
+     
+Integration
+1. The frontend communicates with the backend using RESTful APIs.
+2. User authentication is implemented to secure access to task management features.
    
-* __Role-based Access:__ 
+Setup and Installation
+Requirements
+- Node.js
+- MongoDB
+- npm (Node Package Manager)
+  
+**Steps to Run the Project**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/GeetaChauhan777/Task_Manager_Web_Application.git
+   ```
+2. Navigate to the task-manager-web-app directory:
+   ```bash
+   cd task-manager-web-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Create a `.env` file in the root of the backend directory and add the following variables:
+   ```env
+   DB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   PORT=5000
+   ```
+5. Start the React development server:
+   ```bash
+   npm run dev
+   ```
+   
+Live Demo
+The application is hosted live on a server/cloud platform. [Demo Link](#)
 
-  * Different roles (Customer, Employee, User) with   specific privileges.
-  * Customers can assign tasks to employees.
-Employees can view assigned tasks and mark them as completed.
-
-* __Task Management:__ 
-
-   * Customers can create and assign tasks to specific employees.
-   * Employees can see assigned tasks and provide updates on completion.
-
-* __API Endpoints::__ 
-
-   * Well-defined APIs for various functionalities, ensuring seamless integration with frontend.
-## 🖥️ Tech Stack
-
- * __Frontend__:
-
-   * React.js for building the user interface.
-     CSS and Bootstrap for styling.
-   * React Bootstrap for enhanced UI components.
-* __Backend__:
-
-   * Node.js with Express.js for server-side development.
-  * MongoDB for data storage.
-## 🎯 Getting Started
-
-1. __Clone the Repository:__
-
-       https://github.com/Vijayarajvijay/Task-Manager-FE
-2. __Install Dependencies:__
-        
-                cd task-management
-                  npm install
-
-3. __Configure Environment Variables:__
-
-* Create a .env file in the root directory and configure the following variables:
-
-       PORT=3000
-       MONGODB_URI=your_mongodb_connection_string
-       JWT_SECRET=your_jwt_secret_key
-4. __Run the Application:__
-           
-                         npm start
-
-5. __Access the Application:__
-
-* Open your browser and navigate to http://localhost:3000.
-
-
-
-6. __Backend Postman URl :__  
-
-       https://documenter.getpostman.com/view/30449043/2s9YyqjNTJ
-
- 7. __Backend Source code :__
-
-        https://github.com/Vijayarajvijay/Task-manager-BE
-
-8. __Netlify Deployed Url For Live:__
-
-       https://profound-squirrel-03efdb.netlify.app/
+Testing
+- **Unit Testing**:
+  - Backend API testing is performed using tools like Postman.
+  - Unit tests for frontend components can be added.
+- **Manual Testing**:
+  - Test all functionalities, including edge cases (e.g., invalid input, unauthorized access).
+    
+Acceptance Criteria
+- **Functionality**: Users can register, log in, and perform CRUD operations on tasks.
+- **User Interface**: The design is responsive and visually appealing.
+- **Backend Implementation**: Efficient API handling with authentication and task operations.
+- **Database Integration**: Properly stores user and task data securely.
+- **Security**: Input validation, password hashing, and JWT implementation.
+- **Error Handling**: Meaningful error messages are provided.
+  
+Demo Video
 
 
-## 📌 Project Structure:
 
-* __client :__ React.js frontend code.
-* __server :__ Node.js backend code.
-## 🗝️ Sample User Logins :
 
-1. __Employee Login:__
+**Sample User Login :**
 
-* Email : employee1@gmail.com
-* Password : Password@123
+•	Email : customer1@gmail.com
 
-2. __Customer Login :__
-* Email : customer1@gmail.com
-* Password : Password@123
-
+•	Password : Password@123
