@@ -1,8 +1,11 @@
 # Task_Manager_Web_Application
+
 **Description**
 
 This is a Task Manager web application that allows users to create, view, update, and delete tasks. The application is designed with frontend, backend, database, and API components, enabling users to register, log in, and effectively manage their tasks.
+
 Features
+
 - **User Authentication**: Users can register and log in securely with password hashing and JWT-based authentication.
 - **Task Management**: Users can perform CRUD operations (Create, Read, Update, Delete) on tasks.
 - **Responsive Design**: The frontend is intuitive and mobile-friendly for different screen sizes.
@@ -10,8 +13,10 @@ Features
 - **Database Integration**: Stores user and task data securely in the database.
 - **Error Handling**: Meaningful error messages and robust validation for a smooth user experience.
 
-Project Structure
+**Project Structure**
+
 Backend Development
+
 1. **Server Setup**:
    - Built using **Node.js** and **Express.js**.
    - JWT is used for user authentication and authorization.
@@ -24,6 +29,7 @@ Backend Development
    - Error messages are provided for meaningful feedback.
      
 Database Setup
+
 1. **Database Choice**:
    - **MongoDB** was chosen for this project.
 2. **Database Schema**:
@@ -31,6 +37,7 @@ Database Setup
    - Task Schema: Stores task information (e.g., title, description, status, due date, user ID).
      
 Frontend Development
+
 1. **Framework**:
    - Built with **React.js** for a responsive and user-friendly interface.
 2. **Components**:
@@ -40,11 +47,14 @@ Frontend Development
    - CSS is used for responsive design and an intuitive interface.
      
 Integration
+
 1. The frontend communicates with the backend using RESTful APIs.
 2. User authentication is implemented to secure access to task management features.
    
 Setup and Installation
+
 Requirements
+
 - Node.js
 - MongoDB
 - npm (Node Package Manager)
@@ -74,9 +84,11 @@ Requirements
    ```
    
 Live Demo
-The application is hosted live on a server/cloud platform. [Demo Link](https://taskmanagerwebapplication.netlify.app/)
+
+The application is hosted live on a **Netlify** platform. [Demo Link](https://taskmanagerwebapplication.netlify.app/)
 
 Testing
+
 - **Unit Testing**:
   - Backend API testing is performed using tools like Postman.
   - Unit tests for frontend components can be added.
@@ -84,6 +96,7 @@ Testing
   - Test all functionalities, including edge cases (e.g., invalid input, unauthorized access).
     
 Acceptance Criteria
+
 - **Functionality**: Users can register, log in, and perform CRUD operations on tasks.
 - **User Interface**: The design is responsive and visually appealing.
 - **Backend Implementation**: Efficient API handling with authentication and task operations.
