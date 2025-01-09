@@ -103,7 +103,11 @@ Acceptance Criteria
 - **Database Integration**: Properly stores user and task data securely.
 - **Security**: Input validation, password hashing, and JWT implementation.
 - **Error Handling**: Meaningful error messages are provided.
-  
+
+  **Demo Video**
+
+https://github.com/user-attachments/assets/9d0b9fa9-a711-41e5-93fc-033ad978b640
+
 **Sample User Logins :**
 
 1.	Employee Login:
