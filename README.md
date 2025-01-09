@@ -104,11 +104,6 @@ Acceptance Criteria
 - **Security**: Input validation, password hashing, and JWT implementation.
 - **Error Handling**: Meaningful error messages are provided.
   
-Demo Video
-
-
-
-
 **Sample User Logins :**
 
 1.	Employee Login:
@@ -117,7 +112,7 @@ Demo Video
 
 •	Password : Password@123
 
-3.	Customer Login :
+2.	Customer Login :
    
 •	Email : customer1@gmail.com
 
